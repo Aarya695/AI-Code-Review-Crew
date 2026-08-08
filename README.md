@@ -15,9 +15,11 @@ Three agents work in sequence:
 ## Setup (Day 1)
 
 ### 1. Install Ollama
+
 Download from https://ollama.com/download and install for your OS.
 
 ### 2. Pull a code model
+
 On 16GB RAM / CPU-only, start with the 7B quantized coder model:
 
 ```bash
@@ -83,24 +85,3 @@ ai-code-review-crew/
 │   └── main.py              # CLI entrypoint
 └── output/                  # generated reports land here
 ```
-
-## Roadmap (Days 2-4)
-
-- **Day 2:** Point it at a real repo (try it on your SwiftCart backend),
-  add a `--dir` mode to review multiple files in one run.
-- **Day 3:** Wrap in a minimal FastAPI endpoint so it's demo-able as a
-  service, not just a CLI. Push to GitHub with this README.
-- **Day 4:** Polish the report format, write 2-3 sentences on design
-  decisions (why 3 agents, why sequential not hierarchical process, why a
-  local model) -- these become your interview talking points.
-
-## Why this project (for interview talking points)
-
-- Directly maps to real AI-native engineering work: validating AI-generated
-  code, quality gates, and agentic orchestration -- not just calling an LLM
-  once.
-- Runs on a local quantized model, extending existing on-device AI
-  experience (llama.cpp / GGUF quantization) into an agentic system instead
-  of a single model call.
-- The static analyzer is a real tool the LLM calls, not just a prompt --
-  demonstrates tool-use, not just prompting.
