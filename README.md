@@ -12,8 +12,6 @@ Three agents work in sequence:
 3. **Tech Lead** -- consolidates both into one prioritized markdown report
    (Critical / Warning / Nit).
 
-## Setup (Day 1)
-
 ### 1. Install Ollama
 
 Download from https://ollama.com/download and install for your OS.
